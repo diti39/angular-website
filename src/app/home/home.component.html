@@ -1,0 +1,12 @@
+
+<section class="search-section">
+    <form (ngSubmit)="search()" class="search-form">
+        <input type="text" placeholder="Search" [(ngModel)]="searchTerm" name="searchTerm" class="search-input">
+        <button class="search-button" type="submit">Search</button>
+    </form>
+</section>
+
+<section>
+    <h3>All categories {{ data.businessName }}</h3>
+    <app-products *ngFor="let category of filteredCategories" [category]="category"></app-products>
+</section>

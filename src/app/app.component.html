@@ -1,0 +1,32 @@
+<div [ngClass]="themeService.themeSignal()">
+  <main>
+    <a>
+      <header>
+        <mat-toolbar class="fixed-toolbar">
+          <div class="theme-control">
+            <button mat-icon-button *ngIf="showGoBackButton()" (click)="goBack()">
+              <mat-icon>arrow_back</mat-icon>
+            </button>
+            <mat-slide-toggle checked (click)="toggleTheme()"></mat-slide-toggle>
+            <button mat-icon-button>
+              @if (themeService.themeSignal() === 'dark'){
+              <mat-icon>bedtime</mat-icon>
+              } @else {
+              <mat-icon>brightness_5</mat-icon>
+              }
+            </button>
+          </div>
+          <span routerLink="/">My Application Website</span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+            (click)="openBillDialog()">
+            <mat-icon matBadge="{{ selectedProductsCount }}" matBadgeColor="warn">shopping_cart</mat-icon>
+          </button>
+        </mat-toolbar>
+      </header>
+    </a>
+    <section class="content">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

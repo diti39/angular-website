@@ -1,0 +1,21 @@
+<!-- <p>All products - {{category.name}}</p> -->
+
+<ng-container *ngFor="let product of filteredProducts; let i = index" >
+    <mat-card class="product-card">
+        <mat-card-header>
+            <div mat-card-avatar class="product-avatar"></div>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+            <mat-card-subtitle>{{ product.unitPrice }} - Lek</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            Card description goes here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt possimus repellat illum ratione expedita delectus dolores!
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-icon-button color="primary" (click)="addProduct(product)"><mat-icon>add</mat-icon></button>
+            <button mat-icon-button color="warn" (click)="removeProduct(product)"><mat-icon>remove</mat-icon></button>
+        </mat-card-actions>
+    </mat-card>
+</ng-container>
+
+
+

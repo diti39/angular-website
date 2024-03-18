@@ -1,0 +1,14 @@
+<mat-dialog-content class="dialog-content">
+<h2 mat-dialog-title>Fatura</h2>
+    <ul>
+        <h3>Produktet e zgjedhura</h3>
+        <ng-container *ngFor="let product of selectedProducts">
+            <li>{{ product.name }} - {{ product.unitPrice }} Lek ({{ product.quantity }})</li>
+        </ng-container>
+    </ul>
+    <p>Shuma totale: {{ totalPrice }} Lek</p>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close color="primary" (click)="openPaymentDialog()">Paguaj</button>
+    <button mat-button mat-dialog-close color="warn">Anulo</button>
+</mat-dialog-actions>
+</mat-dialog-content>

@@ -1,0 +1,24 @@
+
+
+mat-toolbar {
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.theme-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
+.content {
+  padding-top: 74px; /* Adjust the value based on the height of your toolbar */
+}

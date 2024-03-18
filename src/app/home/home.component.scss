@@ -1,0 +1,44 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  
+  .search-section {
+    display: flex;
+
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #c3cbd3;
+    color: #fff;
+    border: 1px solid #c3cbd3;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
