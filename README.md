@@ -1,6 +1,7 @@
 # MyNewApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+Node.js version v20.5.0
 
 ## Development server
 
